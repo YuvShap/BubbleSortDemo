@@ -1,0 +1,8 @@
+﻿<div ng-repeat="numbers in $ctrl.numbersLists">
+    <numbers-list numbers="numbers" on-finish="$ctrl.sortCurrentList(currentList)"></numbers-list>
+    <br />
+</div>
+<div ng-show="$ctrl.sorted">
+    Done!
+</div>
+

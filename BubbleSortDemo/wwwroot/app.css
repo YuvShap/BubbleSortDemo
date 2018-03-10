@@ -1,0 +1,32 @@
+﻿div {
+    text-align: center;
+}
+
+.number {
+    transition: all 0.2s ease;
+    border: 1px solid black;
+    font-size: larger;
+}
+
+    .number.ng-move {
+        position: relative;
+        left: 26px;
+        background-color: aliceblue;
+    }
+
+        .number.ng-move.number.ng-move-active {
+            transition: all 0.2s ease;
+            left: 0;
+        }
+
+        .number.ng-move + div {
+            position: relative;
+            left: -26px;
+            background-color: aliceblue;
+        }
+
+        .number.ng-move.number.ng-move-active + div {
+            transition: all 0.2s ease;
+            position: relative;
+            left: 0;
+        }
